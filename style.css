@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1190px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.pagewrap .group1 .section1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagewrap .group1 .section1 .left{
+    width: 50%;
+    height: 319px;
+    background: #26CFB1;
+}
+.pagewrap .group1 .section1 .right{
+    width: 50%;
+    height: 319px;
+    background: #EBB079;
+}
+.pagewrap .group1 .section2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.pagewrap .group1 .section2 .left{
+    width: 50%;
+}
+.pagewrap .group1 .section2 .left .element{
+    width: 100%;
+    height: 250px;
+    background: #EB7979;
+}
+.pagewrap .group1 .section2 .left .element:nth-child(2){
+    background: #BD31A7;
+}
+.pagewrap .group1 .section2 .right{
+    width: 50%;
+    background: #8979EB;
+}
+.pagewrap .group1 .section3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagewrap .group1 .section3 .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.pagewrap .group1 .section3 .row .left{
+    width: calc(100% * (2 / 3));
+    height: 250px;
+    background: #26CFB1;
+}
+.pagewrap .group1 .section3 .row .right{
+    width: calc(100% * (1 / 3));
+    height: 250px;
+    background: #EBB079;
+}
+.pagewrap .group1 .section3 .row:nth-child(2){
+    flex-direction: row-reverse;
+}
+.pagewrap .group1{
+    margin-bottom: 20px;
+}
+.pagewrap .group2{
+    width: 100%;
+    height: 319px;
+    background: #26CFB1;
+    margin-bottom: 20px;
+}
+.pagewrap .group3 .section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagewrap .group3 .section .element{
+    width: calc((100% * (1 / 3)) - (40px / 3));
+    height: 319px;
+    background: #EBB079;
+}
+.pagewrap .group3 .section .element:nth-child(2){
+    background: #29BD41;
+}
+.pagewrap .group3{
+    margin-bottom: 20px;
+}
+.pagewrap .group4{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.pagewrap .group4 .section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagewrap .group4 .section .element{
+    width: calc(50% - (20px / 2));
+    height: 250px;
+    background: #26CFB1;
+}
+.pagewrap .group5 .big{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagewrap .group5 .big .left{
+    width: calc((100% * (2 / 3)) - (20px / 2));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagewrap .group5 .big .left .element{
+    width: calc(50% - (20px / 2));
+    height: 250px;
+    background: #7992EB;
+}
+.pagewrap .group5 .big .left .element:nth-child(2){
+    background: #EBB079;
+    padding: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagewrap .group5 .big .left .element:nth-child(2) .child{
+    width: calc(50% - (20px / 2));
+    height: calc(50% - (20px / 2));
+    background: #D9D9D9;
+}
+.pagewrap .group5 .big .left .element:nth-child(3){
+    background: #EBB079;
+}
+.pagewrap .group5 .big .right{
+    width: calc((100% * (1 / 3)) - (20px / 2));
+    background: #EB79BD;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 768px){
+    .pagewrap .group1 .section1 .left{
+        width: 100%;
+    }
+    .pagewrap .group1 .section1 .right{
+        width: 100%;
+    }
+    .pagewrap .group1 .section2 .left{
+        width: 100%;
+    }
+    .pagewrap .group1 .section2 .right{
+        width: 100%;
+        height: 250px;
+    }
+    .pagewrap .group1 .section3 .row .left{
+        width: 100%;
+    }
+    .pagewrap .group1 .section3 .row .right{
+        width: 100%;
+    }
+    .pagewrap .group1 .section3 .row:nth-child(2){
+        flex-wrap: wrap-reverse;
+    }
+    .pagewrap .group3 .section .element{
+        width: calc(50% - 10px);
+    }
+    .pagewrap .group3 .section .element:last-child{
+        width: 100%;
+    }
+    .pagewrap .group5 .big .right{
+        width: 100%;
+        height: 250px;
+    }
+    .pagewrap .group5 .big .left{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .pagewrap .group3 .section .element{
+        width: 100%;
+    }
+    .pagewrap .group4 .section .element{
+        width: 100%;
+    }
+    .pagewrap .group5 .big .left .element{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 360px){
+    .pagewrap .group5 .big .left .element:nth-child(2) .child{
+        width: 100%;
+        height: 150px;
+    }
+    .pagewrap .group5 .big .left .element:nth-child(2){
+        height: auto;
+    }
+}
